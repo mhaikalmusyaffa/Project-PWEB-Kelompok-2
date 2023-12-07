@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Body styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #526D82;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+/* Container styles for the entire application */
+.app {
+    width: 500px;
+    height: 800px;
+    border: 5px solid #27374D;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #DDE6ED;
+    padding-top: 50px;
+  }
+
+/* Styles for the "Add New" button */
+#addNew {
+    display: flex;
+    background-color: #9DB2BF;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for the "+" icon within the "Add New" button */
+#addNew i {
+    color: black;
+}
+
+/* Styles for the custom "plus" icon */
+.bx-plus {
+    background-color: #526D82;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+/* Styles for the container of items */
+#items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-height: 400px; /* Set a fixed height for the items container */
+    overflow-y: auto; /* Add scroll for overflow content */
+}
+
+/* Styles for each item in the list */
+#items div {
+    background-color: #9DB2BF;
+    border: 3px solid #526D82;
+    padding: 5px;
+    border-radius: 5px;
+    display: grid;
+    gap: 4px;
+}
+
+/* Styles for the options within each item (e.g., delete, edit) */
+.options {
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+/* Styles for icons within the options */
+.options i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Styles for displaying error messages */
+#msg {
+    color: red;
+}
+/* Tambahkan kode ini di file CSS Anda */
+.red-text {
+    color: red;
+   }
+
+.green-text {
+    color: green;
+   }
